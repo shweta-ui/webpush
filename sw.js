@@ -20,6 +20,6 @@ self.addEventListener('push', function(e) {
 
     }
     e.waitUntil(
-        self.registration.sendNotification('Hello World', options)
+        self.registration.showNotification('Hello World', options)
     );
 });
